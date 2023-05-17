@@ -26,10 +26,13 @@
 
 <body>
 
+   <!-- <video autoplay muted loop id="myVideo">
+      <source src="img/bgvideo.mp4" type="video/mp4">
+   </video> -->
+
 
 
    <!-- homepage -->
-
    <div class="background" id="home">
 
       <!-- navbar -->
@@ -50,12 +53,16 @@
       <section class="intro">
          <div class="container">
             <div class="row intro_boxes">
-               <div class="col-lg-6 col-md-6 intro_box1">
+               <div class="col-lg-6 col-md-6 intro_box1" data-aos="fade-in-left">
                   hi I am vivek and i am a web develper
                </div>
-               <div class="col-lg-6 col-md-5 intro_box2">
+               <div class="col-lg-6 col-md-5 intro_box2 animate__animated animate__fadeInRight">
                   <div class="box2_svg">
-
+                     <!-- <div class="box2_svg_img1"> -->
+                     <lottie-player class="box2_svg_img1"
+                        src="https://assets8.lottiefiles.com/packages/lf20_vnikrcia.json" background="transparent"
+                        speed="1" loop autoplay></lottie-player>
+                     <!-- </div> -->
                   </div>
                </div>
             </div>
@@ -66,143 +73,275 @@
    </div>
 
 
+   <div class="fron_project_to_end">
+      <!-- project -->
 
-   <!-- project -->
-
-   <section class="project" id="project">
-      <div class="project_heading">Some of my works</div>
-      <div class="project_box">
-         <div class="container">
-            <div class="row project_row">
-               <div class="col-lg-7 project_img project_img1" data-aos="slide-left" data-aos-duration="1500"></div>
-               <div class="col-lg-5 project_info">
-                  <div class="project_title">
-                     Arcade
-                  </div>
-                  <div class="project_detail">
-                     Lorem, ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing eli
-                     Quis
-                     consectetur minima non est eaque, fugit rerum ratione quod! Error, assumenda quisquam!
-                  </div>
-                  <div class="project_demo">
-                     <a href="https://neumorphism.io/#e0e0e0"><button class="project_link">View</button></a>
+      <section class="project" id="project">
+         <div class="project_heading">Some of my works</div>
+         <div class="project_box">
+            <div class="container">
+               <div class="row project_row">
+                  <div class="col-lg-7 project_img project_img1" onmouseover="projectImgIn()"
+                     onmouseout="projectImgOut()" data-aos="slide-left" data-aos-duration="1500"
+                     style="transition: 1.5s;"></div>
+                  <div class="col-lg-5 project_info">
+                     <div class="project_title">
+                        Arcade
+                     </div>
+                     <div class="project_detail">
+                        Lorem, ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing eli
+                        Quis
+                        consectetur minima non est eaque, fugit rerum ratione quod! Error, assumenda quisquam!
+                     </div>
+                     <div class="project_demo">
+                        <a href="https://neumorphism.io/#e0e0e0"><button class="project_link">View</button></a>
+                     </div>
                   </div>
                </div>
+
+
+               <div class="row project_row">
+                  <div class="col-lg-5 project_info project_info_even ">
+                     <div class="project_title">
+                        BITEBAZAAR
+                     </div>
+                     <div class="project_detail">
+                        Lorem, ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Quis
+                        consectetur minima non est eaque, fugit rerum ratione quod! Error, assumenda quisquam!
+                     </div>
+                     <div class="project_demo">
+                        <a href="https://neumorphism.io/#e0e0e0"><button class="project_link">View</button></a>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 project_img project_img2" onmouseover="projectImgIn()"
+                     onmouseout="projectImgOut()" data-aos="slide-right" data-aos-duration="1500"
+                     style="transition: 1.5s;"></div>
+               </div>
+
+
+               <div class="row project_row">
+                  <div class="col-lg-7 project_img project_img3" onmouseover="projectImgIn()"
+                     onmouseout="projectImgOut()" data-aos="slide-left" data-aos-duration="1500"
+                     style="transition: 1.5s;"></div>
+                  <div class="col-lg-5 project_info">
+                     <div class="project_title">
+                        Arcade
+                     </div>
+                     <div class="project_detail">
+                        Lorem, ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Quis
+                        consectetur minima non est eaque, fugit rerum ratione quod! Error, assumenda quisquam!
+                     </div>
+                     <div class="project_demo">
+                        <a href="https://neumorphism.io/#e0e0e0"><button class="project_link">View</button></a>
+                     </div>
+                  </div>
+               </div>
+
             </div>
 
 
-            <div class="row project_row">
-               <div class="col-lg-5 project_info project_info_even ">
-                  <div class="project_title">
-                     BITEBAZAAR
-                  </div>
-                  <div class="project_detail">
-                     Lorem, ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Quis
-                     consectetur minima non est eaque, fugit rerum ratione quod! Error, assumenda quisquam!
-                  </div>
-                  <div class="project_demo">
-                     <a href="https://neumorphism.io/#e0e0e0"><button class="project_link">View</button></a>
-                  </div>
-               </div>
-               <div class="col-lg-7 project_img project_img2" data-aos="slide-right" data-aos-duration="1500"></div>
-            </div>
+            <div class="show_all_project">
+               <a href="https://github.com/Vivek7777777?tab=repositories" target="_blank">
+                  <lottie-player class="all_project_icon"
+                     src="https://assets1.lottiefiles.com/packages/lf20_80nu1g6c.json" speed="1" loop
+                     autoplay></lottie-player>
+               </a>
 
-
-            <div class="row project_row">
-               <div class="col-lg-7 project_img project_img3" data-aos="slide-left" data-aos-duration="1500"></div>
-               <div class="col-lg-5 project_info">
-                  <div class="project_title">
-                     Arcade
-                  </div>
-                  <div class="project_detail">
-                     Lorem, ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Quis
-                     consectetur minima non est eaque, fugit rerum ratione quod! Error, assumenda quisquam!
-                  </div>
-                  <div class="project_demo">
-                     <a href="https://neumorphism.io/#e0e0e0"><button class="project_link">View</button></a>
-                  </div>
-               </div>
             </div>
-
-            <!-- 
-            <div class="row project_row">
-               <div class="col-lg-5 project_info project_info_even ">
-                  <div class="project_title">
-                     Arcade
-                  </div>
-                  <div class="project_detail">
-                     Lorem, ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Quis
-                     consectetur minima non est eaque, fugit rerum ratione quod! Error, assumenda quisquam!
-                  </div>
-                  <div class="project_demo">
-                     <a href="https://neumorphism.io/#e0e0e0"><button class="project_link">View</button></a>
-                  </div>
-               </div>
-               <div class="col-lg-7 project_img project_img4"></div>
-            </div>
- -->
 
 
          </div>
-
-      </div>
-   </section>
+      </section>
 
 
 
 
-   <!-- why you -->
-   <section class="project why" id="why">
-      <div class="project_heading why_heading">Why you?</div>
-      <div class="why_box">
+      <!-- why you -->
+      <!-- <section class="project why" id="why">
+   <div class="project_heading why_heading">Why you?</div>
+   <div class="why_box">
          <div class="items item1" data-aos="flip-up" >
             Quality
             <div class="items item2 " data-aos="fade-up-left" data-aos-duration="1500">Cost</div>
             <div class="items item3 " data-aos="fade-up-right" data-aos-duration="1500">Speed</div>
          </div>
       </div>
-   </section>
+   </section> -->
+
+
+
+      <!-- skills -->
+      <section class="skill_section">
+         <div class="skill_heading ">
+            <div class="project_heading">
+               Skills
+            </div>
+            
+         </div>
+         <img src="img/circle-spin.svg" alt="">
+         <div class="all_skills">
+            <div class="my_skills container">
+
+               <div class="row srow1">
+                  <div class="skillr1 skill_icon col-sm-6">
+                     <div class="react">
+
+                        <lottie-player class="skill_size1"
+                           src="https://assets7.lottiefiles.com/packages/lf20_yMrzAd.json" background="transparent"
+                           speed="1" loop autoplay></lottie-player>
+                     </div>
+
+                  </div>
+
+                  <div class="skillr1 skill_icon col-sm col-sm-6">
+                     <div class="nodejs">
+
+                        <lottie-player class="skill_size1"
+                           src="https://assets7.lottiefiles.com/packages/lf20_ipzmqnqg.json" background="transparent"
+                           speed="1" loop autoplay></lottie-player>
+                     </div>
+
+                  </div>
+               </div>
+
+               <div class="row srow2">
+                  <div class="skillr2 mysql skill_icon col-sm-4">
+                     <lottie-player class="skill_size2"
+                        src="https://assets8.lottiefiles.com/private_files/lf30_w11f2rwn.json" background="transparent"
+                        speed="1" loop autoplay></lottie-player>
+
+                  </div>
+
+                  <div class="skillr2 js skill_icon col-sm-4">
+                     <lottie-player class="skill_size2"
+                        src="https://assets4.lottiefiles.com/packages/lf20_rgrylcip.json" background="transparent"
+                        speed="1" loo autoplay></lottie-player>
+
+                  </div>
+
+                  <div class="skillr2 mongodb skill_icon col-sm-4">
+                     <lottie-player class="skill_size2"
+                        src="https://assets5.lottiefiles.com/private_files/lf30_9xcevvfo.json" background="transparent"
+                        speed="1" loop autoplay></lottie-player>
+
+                  </div>
+               </div>
+
+               <div class="row srow3">
+                  <div class="skill3 html skill_icon col-sm-3">
+
+                     <lottie-player class="" src="https://assets10.lottiefiles.com/private_files/lf30_iibqa99t.json"
+                        background="transparent" speed="1" loop autoplay></lottie-player>
+                  </div>
+
+                  <div class="skill3 css skill_icon col-sm-3">
+
+                     <lottie-player class="" src="https://assets8.lottiefiles.com/private_files/lf30_d6czzyqr.json"
+                        background="transparent" speed="1" loop autoplay></lottie-player>
+
+                  </div>
+
+                  <div class="skill3 git skill_icon col-sm-3">
+                     <lottie-player class="skill_size3"
+                        src="https://assets5.lottiefiles.com/private_files/lf30_03cuemhb.json" background="transparent"
+                        speed="1" loop autoplay></lottie-player>
+
+                  </div>
+
+                  <div class="skill3 cpro skill_icon col-sm-3">
+                     <lottie-player class="skill_size3"
+                        src="https://assets5.lottiefiles.com/private_files/lf30_8wwkvgel.json" background="transparent"
+                        speed="1" loop autoplay></lottie-player>
+
+                  </div>
+               </div>
+
+
+
+            </div>
+         </div>
+      </section>
 
 
 
 
 
-   <!-- contact -->
+      <!-- contact -->
+      <section class="main_contact">
+         <div class="container">
 
-   <section class="contact" id="contact">
-
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere in minus distinctio error laudantium libero
-      dolorum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab incidunt, earum quidem quis illo suscipit saepe sint, unde quisquam, nulla maxime? Fuga culpa reiciendis atque repudiandae, tenetur veniam. Doloribus sed, quae corporis autem asperiores error culpa? Eveniet recusandae in error hic magnam dolore, quibusdam eius deserunt! Consequuntur eaque quaerat exercitationem neque rem reiciendis quis placeat odio, voluptas iste velit odit fugiat ipsa porro saepe tempora ab doloremque obcaecati harum voluptatum vero libero! Temporibus fuga commodi ex consequatur architecto ipsa perferendis quaerat libero! Quo odit voluptates animi natus hic veritatis autem ad numquam blanditiis id, aperiam debitis minus enim consequatur! Reiciendis, nisi temporibus labore vel commodi libero laboriosam voluptatem nam quas minus dolore illo dolorem maxime! Voluptates eius ratione ut, dicta tempore eos soluta tenetur fugiat aliquid exercitationem sed vel quidem omnis sapiente possimus, tempora excepturi maxime optio dignissimos? Quos perferendis eveniet rerum blanditiis explicabo ipsa? Sed recusandae expedita, culpa placeat atque ut, nihil, cupiditate dolore omnis quod eveniet corrupti et voluptate impedit distinctio quidem quo! Tempora sint ad totam, perspiciatis consequuntur aperiam facere odit veritatis rem, quas possimus harum aliquid eius quidem delectus. Iste, illo. Ipsum soluta non, praesentium rem blanditiis voluptatem laboriosam. Quasi nulla aliquid corrupti reiciendis, eaque doloribus odio facilis sequi. Doloribus impedit distinctio non blanditiis dolore tempora error. Animi aliquam nostrum enim distinctio beatae cupiditate accusamus adipisci! Aspernatur nisi maxime neque vero non commodi ducimus ea corrupti inventore! Autem dignissimos illum dolorem illo deleniti quod atque perferendis, voluptas labore nobis itaque eveniet ex saepe fugit ducimus a. Sed saepe necessitatibus animi voluptatibus placeat, accusantium corrupti soluta, adipisci veritatis sunt neque quaerat nostrum quos reprehenderit est fugiat. Architecto dignissimos odio aperiam officia, voluptate magnam quis ullam ea facilis veritatis. Voluptatem temporibus qui dolor inventore totam vitae aliquid eaque laborum non ea quidem expedita amet quam nulla numquam provident sint ipsam, quod eos nesciunt atque fugiat iure. Repudiandae natus dolorem corporis aliquid sapiente, atque esse nam autem nesciunt repellendus quas fuga itaque porro pariatur maiores recusandae. Rem, assumenda culpa aliquam voluptates iste labore pariatur eveniet, voluptatum harum excepturi consequuntur id itaque blanditiis nostrum recusandae explicabo nihil molestiae at praesentium reiciendis reprehenderit, doloremque inventore voluptatibus! Consequuntur doloremque sunt placeat quae odit facilis deserunt dolorem et dolore ipsam harum fugit quo quisquam nihil dicta eius laborum molestias, minima illo hic itaque! Quibusdam nulla hic ipsa harum ducimus odio nemo quod recusandae impedit officiis, consequuntur praesentium sunt non a, reiciendis cum iure sit incidunt ipsam? Quaerat, aliquam deserunt eos facere inventore odit veritatis explicabo voluptatem facilis ex! Rem laborum pariatur voluptatibus aliquam atque illo eius? Aliquam iste mollitia qui totam animi harum cum fuga corporis excepturi deleniti error, dolores minima? Quisquam officia, esse cum quod non ratione quaerat asperiores at quo consequatur officiis mollitia necessitatibus, odit aliquid illum, laudantium voluptatem? Hic odit laudantium deserunt reiciendis. Et voluptatem inventore tempore dolore architecto quos molestiae! Id, dolorum fuga asperiores eius quia, deserunt cumque laudantium ea omnis sunt placeat fugiat atque velit repudiandae rem provident laborum commodi, vitae praesentium! Quae praesentium perferendis eos voluptate?
-      provident vitae aperiam magnam omnis quaerat quas, repellendus quis corporis. Magni nobis delectus voluptate!
-      Nesciunt eligendi pariatur repudiandae at. Omnis iure repellat dignissimos similique facere aspernatur qui quia
-      consequuntur non nostrum magnam eius reiciendis suscipit, ducimus quisquam ipsam cupiditate nulla voluptate illum!
-      Laudantium accusantium placeat non rem repellat veniam? Adipisci possimus reprehenderit ratione quaerat, hic
-      aperiam
-      velit laboriosam modi rerum nesciunt labore ipsum ipsam molestias! Necessitatibus iure quod rem delectus placeat
-      mollitia ducimus explicabo sint, sapiente maxime eum voluptates eaque aperiam recusandae officiis modi quam sit
-      cum
-      repellat porro praesentium? Autem, officiis enim, neque modi fugiat repellat delectus corrupti cupiditate nobis
-      sit
-      ullam atque animi, sequi repellendus! Ut explicabo, obcaecati, et nobis dolores adipisci voluptatum aliquam atque
-      delectus quaerat debitis quia quidem corrupti suscipit sed doloremque unde doloribus hic excepturi? Illo, nisi?
-      Debitis optio eius veritatis cum maxime, accusamus aspernatur ipsum libero animi dolorum voluptatibus impedit quia
-      sapiente ea officia praesentium asperiores sequi. Dolorum molestiae excepturi nisi quod neque? Voluptatem est unde
-      dolores ea rerum accusamus quod facilis porro odio consequatur eaque a accusantium placeat, maiores repellendus?
-      Commodi ducimus temporibus error vitae tempora amet. Quaerat natus, optio consequatur ducimus asperiores omnis
-      quasi, quos quibusdam rerum repellat nobis suscipit non, alias eius culpa dicta fugit accusamus qui ut ratione
-      deserunt necessitatibus. Mollitia officiis delectus fugiat eum.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum aliquam beatae facilis placeat illum soluta tempore accusantium iusto, at nam odit natus fugit eos magni maiores! Eos assumenda sapiente blanditiis illum corporis minima quas natus, animi, cumque quasi voluptas officiis commodi vitae tenetur, iusto dolorem esse exercitationem cum maiores ducimus ab! Ipsum obcaecati, id consectetur quas accusamus nisi laudantium. Rem alias temporibus ut ab, ad similique quidem culpa necessitatibus placeat deleniti hic fugit, dolores numquam magni veniam, minus non odit excepturi blanditiis! Unde nihil commodi natus quisquam omnis perferendis, facilis vitae optio vel laboriosam reprehenderit recusandae, cumque doloribus enim dicta possimus, asperiores maxime nulla animi similique. Veniam temporibus, inventore dolorem omnis assumenda maiores deleniti illum id. Eius reiciendis quaerat tenetur, esse dolorem nobis placeat autem voluptatibus, commodi repellat ullam sunt tempore aliquam voluptatum unde rerum harum, ut consequuntur? A saepe sapiente repellendus distinctio eligendi deleniti pariatur dolor fugit necessitatibus eaque, commodi, numquam praesentium nobis ratione autem animi illo ipsam ipsum? Laudantium beatae, eum asperiores aut quia dicta deleniti libero nobis excepturi quae quas assumenda, aperiam molestias inventore accusamus amet eveniet nostrum deserunt pariatur commodi quo. Reiciendis, enim, minima nesciunt, sit itaque quasi possimus cupiditate minus aperiam dolorem quibusdam. Nostrum autem soluta vel fugit facere nisi laudantium in? Vero corrupti a quos aliquam ex, veniam nobis debitis accusamus provident ipsam facilis omnis officia neque unde non, aspernatur sed! Itaque, earum. Quidem, repellat earum facere aspernatur cupiditate tempora odio aut quae qui enim rerum dolores, harum, culpa sint adipisci necessitatibus? Laudantium totam, illum illo ea consectetur voluptatibus officia eligendi exercitationem modi quibusdam numquam ullam esse veritatis ipsa praesentium ad tempora aperiam, inventore sint? Quis exercitationem, quod nobis, molestiae quibusdam at praesentium consequatur minus cupiditate natus numquam mollitia, veniam harum. Nam quisquam quaerat sint neque dolor debitis facilis explicabo aperiam rem ex alias id, sit aliquid omnis tempora nobis iste possimus a blanditiis aliquam voluptatum. Quo repudiandae tenetur harum temporibus numquam excepturi iste vero, aliquam asperiores unde ducimus? Magni cupiditate minus eos, perspiciatis, architecto voluptate ipsum ipsam itaque natus repellendus id numquam tenetur nam ratione animi magnam, qui error vero. Similique esse minus doloremque magni consectetur ab autem, nostrum voluptatum a voluptatibus temporibus aut, mollitia quasi laudantium exercitationem nemo sequi ea. Sed tempora, quisquam illo eius rem totam, tenetur doloribus, corrupti nemo odio nisi. Quasi temporibus commodi animi iure, quos amet explicabo doloribus repellat id molestias, laudantium maiores repellendus ad inventore. Eius nobis cumque omnis itaque laboriosam accusamus sequi vel placeat unde. Quaerat iusto quis laudantium, animi est laborum, impedit magni, ipsam sunt eligendi vero id placeat iste voluptatum repellat dolores vitae aperiam quod ab dolore reprehenderit mollitia voluptas! Accusamus neque cum minima, aliquam soluta omnis suscipit ab, harum, eaque vel dignissimos quas autem sequi delectus! Corporis sit quos, fuga earum numquam quod, error quam veritatis accusantium debitis facilis, rerum a nihil sequi nesciunt delectus perspiciatis reprehenderit est qui mollitia quo assumenda architecto deleniti quas! Assumenda eveniet quibusdam deserunt, dicta dolores qui temporibus voluptates. Impedit necessitatibus nihil fugit molestias enim. Obcaecati dolor atque unde hic at illo ad accusamus rerum voluptates cum, quas nulla mollitia ullam ipsa dicta molestiae voluptatem laudantium harum neque placeat? Nesciunt excepturi atque, enim ad quod incidunt possimus ut iusto aliquam quam error neque magni provident doloribus, similique animi, eum itaque optio perspiciatis beatae numquam. Quidem tempore porro molestias iusto vel praesentium aperiam, culpa deserunt, facilis quas sapiente cumque est saepe eligendi aut hic necessitatibus neque tenetur? Debitis cupiditate laborum ipsam veniam molestias unde alias fugit? Consequatur beatae, cum molestiae adipisci assumenda unde quibusdam? Consequuntur perspiciatis ab eaque fugit veniam. Explicabo maxime, eveniet laborum eos fugit assumenda harum voluptates, a iure enim tempora et pariatur ullam repudiandae facilis error ea adipisci porro consequuntur velit laudantium fuga aut. Eligendi autem consequuntur ipsum, perspiciatis totam repellat, nostrum accusamus provident exercitationem, quasi explicabo rem iure qui cupiditate error laboriosam earum quos odio ad! Quasi ipsam minima pariatur illo accusantium corporis ex quo esse labore? Tempora iusto accusantium quos. Porro, quaerat perspiciatis quidem laboriosam numquam reprehenderit harum voluptatibus repellat consequuntur assumenda cupiditate vitae non incidunt voluptas quasi accusantium deleniti accusamus inventore facere esse minus quam rem minima voluptates! Ratione minus recusandae ad? Dolores, id excepturi veritatis perferendis ducimus dolorum laborum sequi asperiores?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis necessitatibus animi in tenetur quod ducimus repellendus voluptas! Illum repellendus quas fugiat deleniti culpa suscipit error, ratione, eveniet consequatur dicta dolorum qui harum recusandae natus corrupti tempore perspiciatis laudantium fuga amet nesciunt, nisi enim quibusdam ipsam. Fuga commodi assumenda provident at ut omnis voluptates ex expedita iusto rem nemo culpa ipsam magnam soluta ab eum, quisquam tempore vero dolorum velit eaque harum. Fugit fugiat nostrum numquam. Vero facilis eveniet sunt recusandae saepe, natus possimus quo cumque. Quaerat minima id sunt placeat cumque ducimus beatae aliquam dicta accusantium atque impedit, sed omnis. Nisi porro, voluptas impedit asperiores quis recusandae omnis sunt odit praesentium facilis. Ut et ex ducimus eligendi architecto veniam, unde similique. Est cupiditate nostrum explicabo! Quas iusto a numquam magni quasi. Quo eos tempore, libero reprehenderit id provident fuga odio nihil voluptas fugiat at doloremque eveniet adipisci molestiae voluptate inventore necessitatibus. Doloribus impedit perspiciatis eligendi animi odit voluptatum blanditiis labore consectetur libero laboriosam, aspernatur ullam nihil, recusandae quia facilis commodi sint cum iusto ratione. Aliquam eius quisquam inventore, officia eligendi, repellat eum quas, neque culpa autem corporis possimus sit nam officiis iusto. Distinctio harum possimus debitis ea illum quis nam corrupti doloremque eaque sint dolor dolores cum, architecto rerum asperiores nulla sed, eveniet aut sapiente facere eum ullam perspiciatis voluptas. Nihil ducimus commodi consectetur reiciendis temporibus minus mollitia eligendi amet accusantium, illo earum optio architecto! Quaerat dicta corporis laborum exercitationem accusamus nihil architecto fuga, perspiciatis repellat aliquam mollitia iste, qui laudantium labore nobis rem. Inventore debitis ex rem reiciendis obcaecati vitae enim voluptates excepturi sequi deserunt quia nemo voluptatum fugit ipsam doloremque, amet, soluta expedita architecto quo delectus nisi sed. Amet, beatae odio! Illo sapiente repellat praesentium delectus dolorem fugiat laudantium rem, eaque assumenda beatae nihil amet illum, et soluta voluptatum aperiam iure quo. Eveniet debitis eius sit. Optio incidunt expedita ipsam soluta ab illo. Ipsa explicabo enim consectetur officia architecto optio, quis ipsam at! Voluptates, mollitia nemo? Neque sit aperiam rem earum porro eos, blanditiis eligendi nihil eveniet dolor doloremque quae nam, perferendis aspernatur quisquam expedita sint reiciendis accusamus, laboriosam excepturi? Totam ipsa similique neque rem culpa placeat autem provident suscipit consectetur quo! Perspiciatis accusantium placeat ipsam corrupti aliquam, velit temporibus aliquid, esse expedita impedit neque architecto molestiae laborum dolores minima minus, veritatis suscipit culpa! Vel sit dicta repellendus quibusdam obcaecati totam aspernatur excepturi modi fugiat! Impedit dolorem corporis dolor eos eum porro minus, ut ratione nihil eius quae autem, possimus nostrum hic! Illum, recusandae corrupti debitis tempora, hic minima nisi, perspiciatis consectetur similique ratione repellat dolores sunt ipsam cumque dignissimos quis ullam? Nobis, quasi laboriosam? Unde deleniti architecto tempora labore eligendi perspiciatis doloremque molestiae magni, praesentium commodi fugit sapiente maiores doloribus fugiat nemo voluptas autem molestias atque consectetur dolorum, ea quidem itaque, quod quo! Assumenda excepturi necessitatibus molestias veniam quam et, soluta laudantium libero labore accusantium, quo praesentium enim aut obcaecati. Nostrum accusantium possimus totam reiciendis quo obcaecati consectetur quos culpa facere laudantium quidem et repellat distinctio molestias expedita sunt, tempore ipsum rerum. Itaque reiciendis sit commodi sunt sed dolore. Fugit eius tenetur magni delectus enim fuga saepe ipsum velit quia quasi iure quos, error asperiores, ad rem aspernatur possimus qui sunt? Est iusto sed commodi a, tenetur molestiae, sunt accusamus rerum iste accusantium nihil dolorem esse cumque harum obcaecati deleniti, eaque aut numquam recusandae iure. Voluptas corrupti sit, dolores veniam omnis, perspiciatis a atque consequuntur rem eum modi facilis. Tenetur dolorem odit nesciunt! Cupiditate fugit, impedit accusantium dolorum quo error voluptas. Deserunt, dicta error eaque quasi repellat impedit doloremque distinctio nam ipsum aliquid modi, quibusdam excepturi nesciunt optio! Eaque numquam facere sunt eligendi dolores autem, ipsum nemo officiis similique vitae quaerat modi voluptates, amet ducimus ut corporis mollitia alias distinctio consectetur a tempora nam. Laboriosam aliquam voluptatibus sed doloribus non quod corporis quam, blanditiis assumenda amet est corrupti suscipit dolorum cum enim veniam eius fuga deleniti placeat? Sint temporibus molestias ab delectus illum recusandae qui assumenda beatae quibusdam nemo aut deserunt, non, hic distinctio cupiditate ex quia at, atque adipisci quis id nisi vero aperiam debitis. Doloremque assumenda eaque, cum earum mollitia iure numquam? Officia corporis eum amet harum magnam alias ad, ab debitis quia sint quos placeat fuga eaque tempore earum maiores, molestiae velit iusto sequi saepe, ipsam omnis. Minima culpa, dignissimos voluptatem corporis pariatur error nulla! Ipsam iusto sit voluptate sint, nihil, vero obcaecati nemo pariatur quasi soluta totam cumque reiciendis ratione illo quisquam, rem corporis quaerat repudiandae veniam sed odit recusandae cupiditate! Odit quis, soluta dolores illum debitis praesentium amet nulla consequuntur delectus magnam, culpa similique deserunt eaque, dolore non ex earum eligendi. Ab hic, vero rerum earum dolor delectus corrupti qui cum molestiae ullam aut nulla modi porro laborum sed at corporis beatae debitis cumque. Quis suscipit reprehenderit possimus, dignissimos libero dolorem repellat ullam aut vel natus expedita voluptate doloribus error, est quo, cupiditate autem? Mollitia, officiis nesciunt! Reprehenderit maiores, dicta cum rerum unde inventore cumque non libero, eligendi adipisci impedit labore quam quisquam alias. Ratione, illo ipsam? Accusantium cum incidunt earum aliquam quas! Saepe libero officiis facere? Porro, consequuntur dolore sit, suscipit exercitationem molestias, incidunt quo modi ipsam adipisci facere nisi asperiores! Ullam id amet unde ratione itaque nesciunt veritatis minima blanditiis beatae tenetur. Corrupti laborum odit quibusdam repudiandae pariatur distinctio placeat dolores quae architecto? Odio reiciendis incidunt magnam, non doloremque modi nesciunt quidem, cum debitis facere repudiandae ducimus architecto reprehenderit fugiat laboriosam quis! Voluptas, commodi natus, quos reiciendis dolorem totam omnis dolore animi fugit, voluptates obcaecati. Tempora repellendus est debitis cupiditate nesciunt provident odit, quaerat alias illo porro quia odio eos? Ipsa blanditiis iste error harum dolores repellendus quod eveniet omnis, consequuntur dolorem ullam quaerat nihil nobis magnam deleniti distinctio odio! Aperiam ut accusamus voluptas vel mollitia. Accusantium, id! Obcaecati illum tempore corrupti dignissimos esse quam sit excepturi a nam soluta? Facilis deserunt illum, itaque animi eum praesentium, libero, doloremque omnis rem voluptas non earum sequi fugiat ut rerum eveniet. Deserunt, harum laborum ea qui corrupti modi aut incidunt nisi. Id, ea eligendi eum vero, quidem architecto tempora quaerat nostrum nulla praesentium eos adipisci provident doloremque consequatur, atque consequuntur enim quia. Itaque atque eligendi sunt adipisci consectetur! Expedita officia a, iusto quidem minima explicabo quam sunt doloremque ipsum iste aliquam velit suscipit enim itaque, perferendis quod, dolores veniam illo mollitia magnam eveniet quas accusamus? Hic, error illo? Assumenda eligendi animi exercitationem voluptatem explicabo alias inventore dicta minima reprehenderit accusamus voluptatibus temporibus non pariatur rem velit, cupiditate id at maxime eius eos quae. Sed saepe labore illo, sint beatae corrupti ab. Dolor ipsam, nam rerum error vitae officia possimus saepe, ex quo ratione eius dignissimos sed corporis accusamus? Sapiente accusamus dolorem at cumque cum aperiam officia quae tempore minus, earum perspiciatis a neque? Placeat unde consequatur pariatur hic cupiditate modi omnis, reprehenderit quia illum, aperiam assumenda minima, quo repudiandae quod autem quibusdam fuga incidunt atque quae? Quia placeat aspernatur quae ea culpa odit quos eius aliquid eaque, hic, alias laboriosam ex illum! Accusantium, odio iste obcaecati velit minima autem. Odit asperiores, recusandae adipisci, quaerat nemo architecto accusamus illo non est vitae ipsa pariatur numquam provident eveniet praesentium quae deleniti iusto magnam fugit quam dignissimos! Accusantium, nostrum. Voluptate aliquid, cum ea maiores architecto laborum aspernatur corrupti sit ab incidunt, fuga sapiente sint eligendi iure adipisci quas fugiat, perspiciatis earum neque dolore itaque et! Delectus dolorem nihil explicabo similique. Exercitationem, voluptate. Necessitatibus asperiores dolor, sequi, ducimus tempore ipsam labore quibusdam cumque distinctio eveniet aliquid exercitationem repellat incidunt voluptates commodi consequuntur, eos quasi enim. Dicta eos modi incidunt atque eum, sapiente totam reiciendis quaerat deleniti aspernatur quam dolor magnam odio quos consectetur illo iure minima laudantium. Ducimus tempora ipsa optio voluptate inventore necessitatibus qui reiciendis distinctio. Placeat architecto sit fugiat dolores quas! Vitae adipisci magnam voluptates cupiditate labore maiores temporibus quam mollitia necessitatibus dolor, dolores veritatis praesentium et placeat quo asperiores delectus atque repellat quis laudantium ea similique? Laudantium non molestiae ab repudiandae? Repellat, sint expedita ullam explicabo consequuntur voluptatem obcaecati nemo, maxime consectetur distinctio molestias quas doloribus voluptas dolores quis voluptatum hic debitis temporibus quia deleniti harum ducimus. Eveniet natus, hic dicta vitae expedita nemo commodi harum, amet voluptate quisquam laboriosam reprehenderit atque. Nemo dolorum a dolorem corrupti, dignissimos amet facere quo iste perferendis repellat molestias pariatur reiciendis nesciunt saepe repellendus at odit odio asperiores cupiditate quod? Quo adipisci hic ut vero quod. Temporibus ut, culpa corrupti deserunt impedit delectus corporis, hic incidunt facere quia laudantium. Itaque delectus, dolore minima accusamus officiis nam eum sit, molestias repellendus ipsum, vero in odit! Libero nemo veniam tempora voluptatum placeat, tempore corrupti iure obcaecati non molestiae rem quos alias voluptatibus harum illum nostrum quo natus repellendus fuga distinctio at fugiat id dicta ducimus. Eum odio ullam sed voluptates similique eos consequatur delectus fuga neque, porro consequuntur officia, sit cumque dignissimos quia aperiam quod officiis adipisci, earum sunt alias id? Provident a, saepe at impedit accusamus dolorem delectus facilis perspiciatis quos vel sequi recusandae esse distinctio dolores nulla odit laudantium id non iusto beatae ipsa, quis suscipit?
-   </section>
+            <div class="row contact_heading ">
+               <div class="contact_heading_content col-md-6">
+                  <!-- <p class="cline1">
+                     Like the portflilo...
+                  </p>  -->
+                  <p class="cline2">
+                     Let's work together
+                  </p>
+               </div>
+               <div class="contact_heading_svg col-md-6">
+                  <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_w7x9i6ag.json"
+                     background="transparent" speed="1" loop autoplay></lottie-player>
+               </div>
+            </div>
+         </div>
 
 
+         <div class="circular_box">
+            <div class="contact">
+               <div class="contact_icons cicon1">
+                  <lottie-player class="github" src="https://assets1.lottiefiles.com/packages/lf20_6HFXXE.json"
+                     background="transparent" speed="2" loop autoplay></lottie-player>
+               </div>
+               <div class="contact_icons cicon2">
+                  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                  <lottie-player class="linkedin" src="https://assets9.lottiefiles.com/packages/lf20_0Cm1Y2.json"
+                     background="transparent" speed="1" loop autoplay></lottie-player>
+               </div>
+               <div class="contact_icons cicon3">
+                  <lottie-player class="gmail" src="https://assets10.lottiefiles.com/packages/lf20_a0reautd.json"
+                     background="transparent" speed="1" loop autoplay></lottie-player>
+               </div>
+               <div class="contact_icons cicon4">
+                  <lottie-player class="twitter" src="https://assets1.lottiefiles.com/private_files/lf30_oxdthhr1.json"
+                     background="transparent" speed="1" loop autoplay></lottie-player>
+               </div>
+            </div>
+         </div>
+      </section>
 
 
 
 
+      <!-- contact -->
+
+      <!-- <section class="contact" id="contact">
+         <div class="subcontact">
+            <div class="get_in_touch">
+
+               <div class="circle">
+                  <div class="small"></div>
+                  <div class="small"></div>
+                  <div class="small"></div>
+                  <div class="small"></div>
+               </div>
+
+            </div>
+         </div>
+
+
+
+      </section> -->
+
+
+
+
+
+   </div>
 
 
 
@@ -216,6 +355,12 @@
 
    <!-- jquerry cdn-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+   <!-- icon -->
+   <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
 
    <!-- js -->
    <script src="script.js"></script>
