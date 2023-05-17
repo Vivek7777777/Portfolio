@@ -81,10 +81,18 @@ nav{
     transition: .3s;
 }
 
-.nav_link:hover{
-    /* color: #ffffff; */
-    color: #3a3cc7;
-    /* text-shadow: 0 0 2px #000000; */
+.nav_link::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav_link:hover::after{
+    width: 80px;
 }
 
 
