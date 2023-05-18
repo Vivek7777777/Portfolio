@@ -14,9 +14,6 @@
 }
 
 
-*{
-    /* color: white; */
-}
 
 
 html {
@@ -424,9 +421,9 @@ a{
 
 
 .skill_size1{
-     border: 5px solid white;
-     background-color: #212121;
-     border-radius: 100%;
+    border: 5px solid white;
+    background-color: #212121;
+    border-radius: 100%;
     width: 90%;
 }
 
@@ -448,6 +445,7 @@ a{
     /* border: 2px solid black; */
     padding: 10px 0 ;
     overflow: hidden;
+    position: relative;
 }
 
 .contact_heading_content{
@@ -455,10 +453,21 @@ a{
     font-size: 100px;
     display: grid;
     place-items: center;
+    /* border: 2px solid black; */
 }
+
 
 .cline2{
     width: 90%;
+}
+
+.contact_heading_content_img{
+    /* border: 2px solid black; */
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    height: 90%;
+    width: 100%;
 }
 
 .contact_heading_svg{
