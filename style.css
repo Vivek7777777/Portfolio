@@ -259,7 +259,7 @@ nav{
     margin: 10px 0;
 }
 
-a{
+.nav_link{
     text-decoration: none;
     font-size: 18px;
 }
