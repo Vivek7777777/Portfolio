@@ -31,10 +31,9 @@ gsap.to(".skill_project_heading", {
 
     scrollTrigger: {
         trigger: ".skill_project_heading",
-        start: "top 70%",
+        start: "top 80%",
         end: "top 0%",
         scrub: true,
-        markers: true,
     },
     left : "0"
 });
@@ -46,7 +45,6 @@ gsap.to(".box", {
         start: "top 50%",
         end: "top -250%",
         scrub: true,
-        markers: true,
     },
     ease: "none",
     height: "100%",
@@ -64,6 +62,7 @@ gsap.to(".react", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".javascript", {
@@ -76,6 +75,7 @@ gsap.to(".javascript", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".node", {
@@ -88,6 +88,7 @@ gsap.to(".node", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".express", {
@@ -100,6 +101,7 @@ gsap.to(".express", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".jquery", {
@@ -112,6 +114,7 @@ gsap.to(".jquery", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".mongo", {
@@ -124,6 +127,7 @@ gsap.to(".mongo", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".mysql", {
@@ -136,6 +140,7 @@ gsap.to(".mysql", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".bootstarp", {
@@ -148,6 +153,7 @@ gsap.to(".bootstarp", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".api", {
@@ -160,6 +166,7 @@ gsap.to(".api", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 
 gsap.to(".css", {
@@ -172,5 +179,6 @@ gsap.to(".css", {
     },
     ease: "none",
     opacity: 1,
+    scale: 1
 });
 

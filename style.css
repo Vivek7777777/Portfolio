@@ -388,14 +388,16 @@ nav{
 
 .skill_section > img{
     position: absolute;
-    left: calc(100% - 15em);
-    top: 10%;
-    /* height: 100%; */
-    /* border: 2px solid #000; */
-    /* box-shadow: 0px 0px 20px rgba(84, 83, 83, 0.571); */
     z-index: 1;
-    animation: contactmove 15s   infinite linear ;
-    
+    animation: contactmove 15s infinite linear ;
+    left: calc(100% - 20em);
+    top: 10%;
+}
+
+.skill_section > img:nth-child(2){
+    left: calc(0% - 22em);
+    top: 70%;
+    /* border: 4px solid white; */
 }
 
 .skill_heading{
@@ -403,15 +405,15 @@ nav{
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 200%;
     height: 200px;
 }
 
 .skill_project_heading{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     position: absolute;
-    left: 10%;
+    left: 15%;
     color: rgb(110, 110, 110);
     font-size: 7rem;
     /* opacity: .7; */
@@ -424,7 +426,6 @@ nav{
     height: auto;
     width: 100%;
     overflow: hidden;
-
 }
 
 
@@ -433,11 +434,13 @@ nav{
 }
 
 .skillset{
+    z-index: 3;
     /* border: 2px solid white; */
     text-align: center;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
+    margin-bottom: 150px;
 }
 
 .skill_line{
@@ -463,21 +466,22 @@ nav{
 }
 
 .skill_in_set1 , .skill_in_set2{
-    opacity: .1;
     display: grid;
     place-items: center;
     color: white;
     height: 100px;
     margin: 400px auto;
-    text-align: center;
+    /* text-align: center; */
     width: 200px;
     /* background: rgba(144, 19, 254, 0.11); */
     background: rgba(142, 29, 241, 0.21);
     box-shadow: 0 8px 150px 30px rgba(136, 8, 248, 0.3);
-    backdrop-filter: blur( 15px );
+    backdrop-filter: blur( 35px );
     -webkit-backdrop-filter: blur( 15px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    opacity: .1;
+    scale: .7;
     
 }
 
@@ -485,9 +489,6 @@ nav{
     margin-bottom: 100px;
 }
 
-.react{
-    
-}
 
 
 
@@ -496,43 +497,9 @@ nav{
 
 
 
-.skill_icon{
-    /* border: 2px solid black; */
-    /* aspect-ratio: 1/1; */
-    z-index: 2;
-    
-}
+/* contact */
 
 
-
-.nodejs{
-    height: 180px;
-    width: 200px;
-    margin: 30px auto ;
-} 
-
-.skill_size1{
-    /* border: 2px solid black; */
-}
-
-
-.skill_size1{
-    border: 5px solid white;
-    background-color: #212121;
-    border-radius: 100%;
-    width: 90%;
-}
-
-.srow1{
-    width: 65%;
-    margin: auto;
-}
-
-
-
-/*.git, .cpro{
-    margin-top: 20px;
-} */
 
 .main_contact {
     width: 100%;
