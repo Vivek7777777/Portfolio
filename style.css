@@ -56,8 +56,8 @@ body{
 /* navbar */
 
 nav{
-    position: fixed;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0; */
     border: 1px solid rgba(0, 0, 0, 0);
     width: 100%;
     height: 90px;
@@ -375,28 +375,22 @@ nav{
     margin: 50px 0 0;
     /* border: 2px solid black; */
     /* padding-top: 30px; */
-    background-color: rgb(18, 18, 18);
+    background-color: rgba(5, 1, 14, 0.921);
     /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply; */
     
     /* background-image: linear-gradient(to right, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
     background-blend-mode: normal, lighten, soft-light; */
-    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    /* background-image: linear-gradient(to right, #868f96 0%, #596164 100%); */
     position: relative;
     overflow: hidden;
 }
 
-.skill_heading{
-    /*border: 2px solid black;*/
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
 .skill_section > img{
     position: absolute;
-    left: 70%;
-    top: 0%;
-    height: 100%;
+    left: calc(100% - 15em);
+    top: 10%;
+    /* height: 100%; */
     /* border: 2px solid #000; */
     /* box-shadow: 0px 0px 20px rgba(84, 83, 83, 0.571); */
     z-index: 1;
@@ -404,21 +398,103 @@ nav{
     
 }
 
+.skill_heading{
+    /*border: 2px solid black;*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    border: 2px solid white;
+    width: 200%;
+    height: 200px;
+}
+
+.skill_project_heading{
+    border: 2px solid white;
+    position: absolute;
+    left: 10%;
+    color: rgb(110, 110, 110);
+    font-size: 7rem;
+    /* opacity: .7; */
+    font-weight: 600;
+}
+
 
 .all_skills{
-    /*border: 2px solid black;*/
+    /* border: 2px solid rgb(237, 227, 227); */
     height: auto;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+.skill_row{
     width: 100%;
 }
 
-.my_skills{
-    /*border: 2px solid black;*/
-    width: 50%;
+.skillset{
+    /* border: 2px solid white; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
 }
 
-.row{
-    /* border: 2px solid black; */
+.skill_line{
+    position: relative;
+    color: white;
 }
+
+.box {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 0px;
+    opacity: 0.5;
+    width: 10px;
+    /* border-radius: 100px; */
+    background-color: #fff;
+    /* border: 2px solid rgb(161, 159, 161); */
+    transform: translate(-50%, 0%);
+}
+
+.skill_set2{
+    margin-top: 650px;
+}
+
+.skill_in_set1 , .skill_in_set2{
+    opacity: .1;
+    display: grid;
+    place-items: center;
+    color: white;
+    height: 100px;
+    margin: 400px auto;
+    text-align: center;
+    width: 200px;
+    /* background: rgba(144, 19, 254, 0.11); */
+    background: rgba(142, 29, 241, 0.21);
+    box-shadow: 0 8px 150px 30px rgba(136, 8, 248, 0.3);
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+.skill_in_set1:last-child , .skill_in_set2:last-child{
+    margin-bottom: 100px;
+}
+
+.react{
+    
+}
+
+
+
+
+
+
+
 
 .skill_icon{
     /* border: 2px solid black; */
@@ -427,12 +503,6 @@ nav{
     
 }
 
-.react{
-    height: 180px;
-    width: 200px;
-    margin: 30px auto ;
-    
-}
 
 
 .nodejs{
@@ -476,7 +546,6 @@ nav{
 
 .contact_heading_content{
     /* border: 2px solid black; */
-    font-size: 100px;
     display: grid;
     place-items: center;
     /* border: 2px solid black; */
@@ -484,6 +553,8 @@ nav{
 
 
 .cline2{
+    font-size: 5rem;
+    font-weight: 600;
     width: 90%;
 }
 
