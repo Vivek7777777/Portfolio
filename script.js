@@ -130,6 +130,7 @@ gsap.to(".mongo", {
     scale: 1
 });
 
+
 gsap.to(".mysql", {
 
     scrollTrigger: {
