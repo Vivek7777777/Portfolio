@@ -507,23 +507,29 @@ nav{
     height: auto;
     background-image: linear-gradient(to right, #f1ebbc 0%, #ace0f9 100%);    
     /* border: 2px solid black; */
-    padding: 10px 0 ;
+    padding: 50px 0 0 0;
     overflow: hidden;
     position: relative;
+}
+
+.contact_heading{
+    margin: 100px 0 0 0;
 }
 
 .contact_heading_content{
     /* border: 2px solid black; */
     display: grid;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid black; */
 }
 
 
 .cline2{
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 600;
     width: 90%;
+    color: #5b5a5a;
 }
 
 .contact_heading_content_img{
@@ -537,7 +543,7 @@ nav{
 
 .contact_heading_svg{
     /* border: 2px solid black; */
-    height: 500px;
+    height: 420px;
 }
 
 
@@ -545,26 +551,29 @@ nav{
 .circular_box{
     /* border: 2px solid black; */
     display: grid;
-    place-items: center;
+    justify-content: center;
+    /* margin-top: -120px; */
+    /* place-items: center; */
+    overflow: hidden;
 }
 
 .contact {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 4px solid rgb(47, 47, 47); */
     border-radius: 100%;
-    margin: 100px 50px;
+    margin: 70px;
     animation: contactmove 20s infinite linear;
 }
 
 .contact_icons {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: grid;
     place-items: center;
     background: rgba( 255, 255, 255, 0.2 );
@@ -623,8 +632,46 @@ nav{
 }
 
 
+/* contact */
 
+@media only screen and (max-width: 1201px) {
+    .cline2{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 993px) {
+    .cline2{
+        font-size: 4rem;
+    }
+}
 
+@media only screen and (max-width: 766px) {
+    .contact_heading{
+        margin: 20px 0 0 0;
+    }
+    .cline2{
+        font-size: 5rem;
+        width: 100%;
+        font-weight: 600;
+        color: #626262;
+        line-height: .9;
+    }
+
+    .contact_heading_svg{
+        height: 330px;
+    }
+
+    .contact{
+        width: 220px;
+        height: 220px;
+        margin: 80px;
+    }
+
+    .contact_icons{
+        width: 65px;
+        height: 65px;
+    }
+}
 
 
 
