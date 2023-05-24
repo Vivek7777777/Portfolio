@@ -208,9 +208,8 @@ nav{
     margin: 100px 0;
     padding: 20px;
 
-    background: #f8f7f7;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #cac5c5;
+    background: #f0efef;
+    box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #cac5c5;
 }
 
 .project_img1 {
@@ -673,7 +672,7 @@ box-shadow:  20px 20px 60px #bebebe,
 
 @media only screen and (max-width: 545px) {
     .intro{
-        margin: 100px 0 100px 0;
+        margin: 0px 0 50px 0;
     }
 
     .intro_box1{
@@ -728,7 +727,7 @@ box-shadow:  20px 20px 60px #bebebe,
     .project_heading{
         font-size: 35px;
         margin: 100px auto 0px ;
-        padding: 10px 0px 10px 10px;
+        padding: 10px 20px;
     }
     
     .project_detail{

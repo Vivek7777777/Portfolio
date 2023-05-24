@@ -14,19 +14,40 @@ if ($(window).width() < 992) {
 }
 
 
+
 // adding animation to project
-function projectImgIn() {
-    $(".project_img").css({ "scale": ".95" })
-    console.log($(".project_img"));
+
+let projectImages = $(".project_img");
+
+projectImgOut();
+
+for (let i = 0; i < projectImages.length; i++) {
+    projectImages[i].addEventListener("mouseover", () => projectImgIn(i));
+    projectImages[i].addEventListener("mouseout", projectImgOut);
+}
+
+function projectImgIn(x) {
+    console.log("run");
+    if(x == 0){
+        $(".project_img1").css({ "scale": "1" });
+    }
+    else if(x == 1){
+        $(".project_img2").css({ "scale": "1" });
+    }
+    else{
+        $(".project_img3").css({ "scale": "1" });
+    }
 }
 
 function projectImgOut() {
-    $(".project_img").css({ "scale": "1" })
+    $(".project_img").css({ "scale": ".95" });
 }
+
 
 
 
 // adding animation to skill section
+
 gsap.to(".skill_project_heading", {
 
     scrollTrigger: {
