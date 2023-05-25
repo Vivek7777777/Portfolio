@@ -29,18 +29,18 @@ for (let i = 0; i < projectImages.length; i++) {
 function projectImgIn(x) {
     console.log("run");
     if(x == 0){
-        $(".project_img1").css({ "scale": "1" });
+        $(".project_img1").css({ "scale": "1.03", "transition": "all 0.5s ease-in-out" });
     }
     else if(x == 1){
-        $(".project_img2").css({ "scale": "1" });
+        $(".project_img2").css({ "scale": "1.03", "transition": "all 0.5s ease-in-out" });
     }
     else{
-        $(".project_img3").css({ "scale": "1" });
+        $(".project_img3").css({ "scale": "1.03", "transition": "all 0.5s ease-in-out" });
     }
 }
 
 function projectImgOut() {
-    $(".project_img").css({ "scale": ".95" });
+    $(".project_img").css({ "scale": "1" });
 }
 
 
@@ -77,21 +77,21 @@ gsap.to(".react", {
 
     scrollTrigger: {
         trigger: ".react",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
     opacity: 1,
-    scale: 1
+    scale: 1,
 });
 
 gsap.to(".javascript", {
 
     scrollTrigger: {
         trigger: ".javascript",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
@@ -103,8 +103,8 @@ gsap.to(".node", {
 
     scrollTrigger: {
         trigger: ".node",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
@@ -116,8 +116,8 @@ gsap.to(".express", {
 
     scrollTrigger: {
         trigger: ".express",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
@@ -129,8 +129,8 @@ gsap.to(".jquery", {
 
     scrollTrigger: {
         trigger: ".jquery",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
@@ -142,8 +142,8 @@ gsap.to(".mongo", {
 
     scrollTrigger: {
         trigger: ".mongo",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
@@ -156,8 +156,8 @@ gsap.to(".mysql", {
 
     scrollTrigger: {
         trigger: ".mysql",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
@@ -169,8 +169,8 @@ gsap.to(".bootstarp", {
 
     scrollTrigger: {
         trigger: ".bootstarp",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
@@ -182,8 +182,8 @@ gsap.to(".api", {
 
     scrollTrigger: {
         trigger: ".api",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
@@ -195,8 +195,8 @@ gsap.to(".css", {
 
     scrollTrigger: {
         trigger: ".css",
-        start: "top 85%",
-        end: "top 44%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: true,
     },
     ease: "none",
