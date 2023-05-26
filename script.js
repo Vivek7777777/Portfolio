@@ -61,7 +61,7 @@ gsap.to(".skill_project_heading", {
 
 var viewportWidth = $(window).width();
 
-// if(viewportWidth > 1300){
+if(viewportWidth > 1300){
     gsap.to(".box", {
         scrollTrigger: {
             trigger: ".box",
@@ -74,7 +74,63 @@ var viewportWidth = $(window).width();
         opacity: 1,
         delay: 0
     });
-// }
+}
+else if(viewportWidth > 1002){
+    gsap.to(".box", {
+        scrollTrigger: {
+            trigger: ".box",
+            start: "top 50%",
+            end: "top -320%",
+            scrub: true,
+        },
+        ease: "none",
+        height: "100%",
+        opacity: 1,
+        delay: 0
+    });
+}
+else if(viewportWidth > 500){
+    gsap.to(".box", {
+        scrollTrigger: {
+            trigger: ".box",
+            start: "top 50%",
+            end: "top -310%",
+            scrub: true,
+        },
+        ease: "none",
+        height: "100%",
+        opacity: 1,
+        delay: 0
+    });
+}
+else if(viewportWidth > 400){
+    gsap.to(".box", {
+        scrollTrigger: {
+            trigger: ".box",
+            start: "top 50%",
+            end: "top -160%",
+            scrub: true,
+        },
+        ease: "none",
+        height: "100%",
+        opacity: 1,
+        delay: 0
+    });
+}
+else{
+    gsap.to(".box", {
+        scrollTrigger: {
+            trigger: ".box",
+            start: "top 50%",
+            end: "top -200%",
+            scrub: true,
+        },
+        ease: "none",
+        height: "100%",
+        opacity: 1,
+        delay: 0
+    });
+}
 
 gsap.to(".react", {
 
