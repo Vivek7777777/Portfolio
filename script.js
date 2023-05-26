@@ -29,13 +29,13 @@ for (let i = 0; i < projectImages.length; i++) {
 function projectImgIn(x) {
     console.log("run");
     if(x == 0){
-        $(".project_img1").css({ "scale": "1.03", "transition": "all 0.5s ease-in-out" });
+        $(".project_img1").css({ "scale": "1.03", "transition": "all 1s ease-in-out" });
     }
     else if(x == 1){
-        $(".project_img2").css({ "scale": "1.03", "transition": "all 0.5s ease-in-out" });
+        $(".project_img2").css({ "scale": "1.03", "transition": "all 1s ease-in-out" });
     }
     else{
-        $(".project_img3").css({ "scale": "1.03", "transition": "all 0.5s ease-in-out" });
+        $(".project_img3").css({ "scale": "1.03", "transition": "all 1s ease-in-out" });
     }
 }
 
@@ -59,19 +59,22 @@ gsap.to(".skill_project_heading", {
     left : "0"
 });
 
-gsap.to(".box", {
+var viewportWidth = $(window).width();
 
-    scrollTrigger: {
-        trigger: ".box",
-        start: "top 50%",
-        end: "top -250%",
-        scrub: true,
-    },
-    ease: "none",
-    height: "100%",
-    opacity: 1,
-    delay: 0
-});
+// if(viewportWidth > 1300){
+    gsap.to(".box", {
+        scrollTrigger: {
+            trigger: ".box",
+            start: "top 50%",
+            end: "top -260%",
+            scrub: true,
+        },
+        ease: "none",
+        height: "100%",
+        opacity: 1,
+        delay: 0
+    });
+// }
 
 gsap.to(".react", {
 
@@ -91,7 +94,7 @@ gsap.to(".javascript", {
     scrollTrigger: {
         trigger: ".javascript",
         start: "top 95%",
-        end: "top 70%",
+        end: "top 60%",
         scrub: true,
     },
     ease: "none",

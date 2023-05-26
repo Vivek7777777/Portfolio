@@ -76,22 +76,24 @@ nav{
 }
 
 .nav_link{
+    position: relative;
     color: black;
     transition: .3s;
 }
 
 .nav_link::after{
+    position: absolute;
     content: '';
+    left: 0%;
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #000000;
     display: block;
-    margin: auto;
     transition: .5s;
 }
 
 .nav_link:hover::after{
-    width: 80px;
+    width: 100%;
 }
 
 
@@ -207,9 +209,9 @@ nav{
     /* border: 2px solid #000; */
     margin: 100px 0;
     padding: 20px;
-
     background: #f0efef;
     box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #cac5c5;
+    overflow: hidden;
 }
 
 .project_img1 {
@@ -305,15 +307,21 @@ nav{
     position: relative;
     /* border: 2px solid #000; */
     margin: 100px 0;   
-    height: 100px;
-    overflow: hidden; 
+    height: 70px;
+    /* overflow: hidden;  */
     border-radius: 20px;
+
+    
 }
 
 .all_project_icon{
     position: absolute;
-    background-color: #373737;    
     z-index: 2;
+    /* border: 4px solid rgba(169, 161, 161, 0.737); */
+    border-radius: 10px;
+     background: #454444;
+    box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #cac5c5;
+    
 }
 
 
@@ -321,7 +329,7 @@ nav{
 
 /* why you */
 
-.why_box{
+/* .why_box{
     position: relative;
     display: grid;
     height: 600px;
@@ -340,10 +348,7 @@ nav{
     margin: 0px auto;
     font-size: 30px;
     background-color: rgb(23, 195, 178);
-    /* background: radial-gradient(rgb(23, 195, 178), rgba(154, 44, 251, 0.556)); */
     background: radial-gradient(#c147e9b4, rgba(154, 44, 251, 0.956));
-    /* background: radial-gradient(#07ffd2, rgba(154, 44, 251, .8)); */
-    /* background: radial-gradient(rgba(77, 166, 255, 1) , rgb(227, 74, 151)); */
     justify-content: center;
     align-items: center;
     position: relative; 
@@ -360,7 +365,7 @@ nav{
     position: absolute;
     right: 40%;
     top: 65%;
-}
+} */
 
 
 
@@ -450,7 +455,7 @@ nav{
     position: absolute;
     top: 0%;
     left: 50%;
-    height: 50px;
+    height: 0px;
     opacity: 0.5;
     width: 10px;
     /* border-radius: 100px; */
@@ -504,7 +509,6 @@ nav{
     height: auto;
     background-image: linear-gradient(to right, #f1ebbc 0%, #ace0f9 100%);    
     /* border: 2px solid black; */
-    padding: 50px 0 0 0;
     overflow: hidden;
     position: relative;
 }
@@ -633,28 +637,23 @@ nav{
 
 /* skills */
 
-/* @media only screen and (max-width: 600px) {
-    .my_skills{
-        padding: 0;
-    }
-
-    .skill_in_set1,  .skill_in_set2{
-        width: 120px;
-        height: 70px;
-        padding: 10px;
-    }
-
-} */
 @media only screen and (max-width: 500px) {
     
     .skill_line{
         width: 20px;
     }
+    .skill_set1{
+        margin-left: 10px;
+    }
     
+    .skill_set2{
+        margin-top: 500px;
+    }
     .skill_in_set1 , .skill_in_set2{
         width: 100%;    
         height: 70px;
         padding: 10px;
+        margin: 300px auto;
     }
 
     .skill_section > img{
@@ -665,8 +664,8 @@ nav{
     .skill_section > img:nth-child(2){
         left: calc(0% - 32em);
         top: 70%;
-        /* border: 4px solid white; */
     }
+
 
     
 }
