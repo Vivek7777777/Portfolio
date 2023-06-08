@@ -136,8 +136,8 @@ gsap.to(".react", {
 
     scrollTrigger: {
         trigger: ".react",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -149,8 +149,8 @@ gsap.to(".javascript", {
 
     scrollTrigger: {
         trigger: ".javascript",
-        start: "top 95%",
-        end: "top 60%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -162,8 +162,8 @@ gsap.to(".node", {
 
     scrollTrigger: {
         trigger: ".node",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -175,8 +175,8 @@ gsap.to(".express", {
 
     scrollTrigger: {
         trigger: ".express",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -188,8 +188,8 @@ gsap.to(".jquery", {
 
     scrollTrigger: {
         trigger: ".jquery",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -201,8 +201,8 @@ gsap.to(".mongo", {
 
     scrollTrigger: {
         trigger: ".mongo",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -215,8 +215,8 @@ gsap.to(".mysql", {
 
     scrollTrigger: {
         trigger: ".mysql",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -228,8 +228,8 @@ gsap.to(".bootstarp", {
 
     scrollTrigger: {
         trigger: ".bootstarp",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -241,8 +241,8 @@ gsap.to(".api", {
 
     scrollTrigger: {
         trigger: ".api",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
@@ -254,8 +254,8 @@ gsap.to(".css", {
 
     scrollTrigger: {
         trigger: ".css",
-        start: "top 95%",
-        end: "top 70%",
+        start: "top 90%",
+        end: "top 65%",
         scrub: true,
     },
     ease: "none",
