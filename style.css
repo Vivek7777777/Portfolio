@@ -46,12 +46,14 @@ nav{
 .navitems{
     text-align: center;
     margin-top: 30px;
+    font-size: 1px;
 }
 
 .nav_link{
     position: relative;
+    text-decoration: none;
     color: black;
-    transition: .3s;
+    font-size: 16px;
 }
 
 .nav_link::after{
@@ -200,11 +202,6 @@ nav{
 
 .project_demo{
     margin: 10px 0;
-}
-
-.nav_link{
-    text-decoration: none;
-    font-size: 18px;
 }
 
 .project_link{
@@ -382,7 +379,8 @@ nav{
 .main_contact {
     width: 100%;
     height: auto;
-    background-image: linear-gradient(to right, #f1ebbc 0%, #ace0f9 100%);    
+    /* background-image: linear-gradient(to right, #f1ebbc 0%, #ace0f9 100%);     */
+    background-image: linear-gradient(to right, #ffffff 0%, #ace0f9 100%);    
     overflow: hidden;
     position: relative;
 }
