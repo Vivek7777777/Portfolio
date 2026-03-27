@@ -1,149 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vivek | Full Stack Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Vivek, full stack developer building thoughtful products with clean UX and modern web technologies."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivek | Full-Stack Portfolio</title>
+  <meta name="description" content="Modern portfolio website for Vivek, full-stack software developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise-overlay" aria-hidden="true"></div>
 
-    <header class="header container">
-      <a href="#home" class="logo">Vivek<span>.</span></a>
-      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <nav class="nav" id="site-nav">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-outline" href="https://github.com/Vivek7777777" target="_blank" rel="noreferrer">GitHub</a>
-      </nav>
-    </header>
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Primary Navigation">
+      <a class="brand" href="#home">Vivek<span>.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-nav" href="https://onedrive.live.com/embed?resid=6643E2E3A5537E83%213534&authkey=!ABJeO_As1sP7NJQ&em=2" target="_blank" rel="noreferrer">Resume</a>
+    </nav>
+  </header>
 
-    <main id="home" class="container">
-      <section class="hero section reveal">
-        <p class="kicker">Full Stack Developer · India</p>
-        <h1>
-          I design and build <span>high‑impact</span> web products that are fast,
-          modern, and user-focused.
-        </h1>
-        <p class="lead">
-          Inspired by contemporary Dribbble/Figma aesthetics: bold typography,
-          glass cards, dark gradients, and clean storytelling.
-        </p>
-        <div class="hero-cta">
-          <a class="btn" href="#work">See Projects</a>
-          <a class="btn btn-outline" href="mailto:vivek@example.com">Book a Call</a>
+  <main>
+    <section class="hero container section reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Full-Stack Developer</p>
+        <h1>I build clean, high-impact products with modern web tech.</h1>
+        <p class="hero-text">Inspired by current Dribbble and Figma visual directions, this refreshed portfolio blends dark gradients, glass cards, and bold typography while keeping the experience fast and accessible.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#work">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Let's Talk</a>
         </div>
-        <div class="stats-grid">
-          <article>
-            <h3>2+</h3>
-            <p>Years crafting full-stack apps</p>
-          </article>
-          <article>
-            <h3>10+</h3>
-            <p>Production and personal projects</p>
-          </article>
-          <article>
-            <h3>100%</h3>
-            <p>Responsive, accessible-first builds</p>
-          </article>
+        <div class="hero-metrics">
+          <div><strong>2+</strong><span>Years building projects</span></div>
+          <div><strong>15+</strong><span>Web experiences shipped</span></div>
+          <div><strong>8+</strong><span>Core technologies</span></div>
         </div>
-      </section>
-
-      <section id="work" class="section reveal">
-        <div class="section-head">
-          <p class="kicker">Selected Work</p>
-          <h2>Projects that blend function + visual craft.</h2>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <img src="img/pro1.png" alt="LinkUp social media app preview" />
-            <div class="card-content">
-              <h3>LinkUp</h3>
-              <p>MERN social platform with JWT auth, friend graph, likes, and profile pages.</p>
-              <a href="https://linkupp.vercel.app" target="_blank" rel="noreferrer">Live Demo ↗</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="img/pro2.png" alt="University website project preview" />
-            <div class="card-content">
-              <h3>University Website</h3>
-              <p>Responsive university web experience with clear IA and polished landing flows.</p>
-              <a href="https://vivek7777777.github.io/University_website/" target="_blank" rel="noreferrer">Live Demo ↗</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="img/pro3.png" alt="Ecommerce website project preview" />
-            <div class="card-content">
-              <h3>E-commerce Store</h3>
-              <p>Clean storefront with product details and frictionless purchase journeys.</p>
-              <a href="https://vivek7777777.github.io/clothing-website/" target="_blank" rel="noreferrer">Live Demo ↗</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="about" class="section about reveal">
-        <div>
-          <p class="kicker">About</p>
-          <h2>Developer mindset, designer taste.</h2>
-          <p>
-            I enjoy translating complex ideas into simple, intuitive interfaces.
-            My workflow combines rapid prototyping, strong frontend execution,
-            and practical backend architecture.
-          </p>
-          <p>
-            I care deeply about performance, animation with purpose, and
-            maintainable codebases that teams can scale confidently.
-          </p>
-        </div>
-        <aside class="glass-card">
-          <h3>Currently focused on</h3>
-          <ul>
-            <li>React + Next.js experiences</li>
-            <li>Node.js APIs & auth systems</li>
-            <li>Motion-rich interfaces</li>
-            <li>Clean developer handoff</li>
-          </ul>
-        </aside>
-      </section>
-
-      <section id="skills" class="section reveal">
-        <div class="section-head">
-          <p class="kicker">Toolbox</p>
-          <h2>Technologies I work with daily.</h2>
-        </div>
-        <div class="chips">
-          <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span>
-          <span>Node.js</span><span>Express</span><span>MongoDB</span><span>MySQL</span>
-          <span>REST APIs</span><span>Git/GitHub</span><span>Figma</span><span>Responsive UI</span>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contact" class="footer container reveal">
-      <h2>Let’s build something ambitious.</h2>
-      <p>If you have a product idea or role in mind, I’d love to connect.</p>
-      <div class="hero-cta">
-        <a class="btn" href="mailto:vivek@example.com">Email Me</a>
-        <a class="btn btn-outline" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
-      <small>© <span id="year"></span> Vivek. Built with HTML, CSS, and JavaScript.</small>
-    </footer>
+      <div class="hero-visual glass-card">
+        <img src="img/2609999_6326-removebg-preview.png" alt="Developer portrait illustration" />
+        <div class="status-chip">Available for full-time roles</div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="section container reveal" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects crafted end-to-end</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card glass-card">
+          <img src="img/pro1.png" alt="LinkUp social platform preview" />
+          <div class="project-info">
+            <h3>LinkUp</h3>
+            <p>Social platform built with MERN stack and JWT auth. Includes posts, likes, profile feeds, and friend system.</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <a href="https://linkupp.vercel.app" target="_blank" rel="noreferrer">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card">
+          <img src="img/pro2.png" alt="University website preview" />
+          <div class="project-info">
+            <h3>University Website</h3>
+            <p>Responsive university site with structured pages and seamless navigation focused on clarity and storytelling.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+            </div>
+            <a href="https://vivek7777777.github.io/University_website/" target="_blank" rel="noreferrer">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card">
+          <img src="img/pro3.png" alt="E-commerce website preview" />
+          <div class="project-info">
+            <h3>E-commerce Experience</h3>
+            <p>Product browsing interface with conversion-focused layouts, clean catalog UI, and a responsive shopping flow.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>jQuery</span><span>UI Design</span>
+            </div>
+            <a href="https://vivek7777777.github.io/clothing-website/" target="_blank" rel="noreferrer">Live Demo ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container split reveal" id="about">
+      <div>
+        <p class="eyebrow">About Me</p>
+        <h2>Product-minded engineer with a design eye.</h2>
+        <p>I enjoy turning ideas into delightful, production-ready software. My process balances thoughtful UX, maintainable architecture, and measurable impact.</p>
+      </div>
+      <div class="glass-card highlights">
+        <div>
+          <h4>Frontend</h4>
+          <p>Accessible UI systems, responsive behavior, smooth interactions.</p>
+        </div>
+        <div>
+          <h4>Backend</h4>
+          <p>REST APIs, authentication flows, scalable server structures.</p>
+        </div>
+        <div>
+          <h4>Collaboration</h4>
+          <p>Clean Git workflows, code reviews, and iterative delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Tech Stack</p>
+        <h2>Tools I work with regularly</h2>
+      </div>
+      <div class="skills-grid">
+        <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Node.js</span>
+        <span>Express</span><span>MongoDB</span><span>MySQL</span><span>Bootstrap</span>
+        <span>GSAP</span><span>Git/GitHub</span><span>REST APIs</span><span>Figma</span>
+      </div>
+    </section>
+
+    <section class="section container contact reveal" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something remarkable.</h2>
+      <p>If you have a role, project, or collaboration in mind, I’d love to hear from you.</p>
+      <div class="contact-actions">
+        <a class="btn" href="mailto:hello@vivek.dev">hello@vivek.dev</a>
+        <a class="btn btn-secondary" href="https://github.com/Vivek7777777" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Vivek. Designed with a modern portfolio aesthetic inspired by Dribbble & Figma trends.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

@@ -1,37 +1,53 @@
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
-const year = document.querySelector('#year');
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const sections = document.querySelectorAll('section[id]');
+const revealTargets = document.querySelectorAll('.reveal');
 
-if (menuBtn && nav) {
-  menuBtn.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', String(isOpen));
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
-  nav.querySelectorAll('a').forEach((link) => {
+  navLinks.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
     });
   });
-}
-
-if (year) {
-  year.textContent = new Date().getFullYear();
 }
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        observer.unobserve(entry.target);
+        entry.target.classList.add('visible');
       }
     });
   },
   {
-    threshold: 0.14,
+    threshold: 0.18,
   }
 );
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+revealTargets.forEach((item) => observer.observe(item));
+
+const setActiveNav = () => {
+  let current = '';
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 140;
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks?.querySelectorAll('a').forEach((link) => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+  });
+};
+
+window.addEventListener('scroll', setActiveNav);
+setActiveNav();
+
+document.getElementById('year').textContent = new Date().getFullYear();
