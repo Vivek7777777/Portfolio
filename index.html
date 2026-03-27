@@ -1,364 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vivek — Full Stack Developer building high-performance web products with great UX."
+    />
+    <title>Vivek | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-1" aria-hidden="true"></div>
+    <div class="ambient ambient-2" aria-hidden="true"></div>
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Potfolio</title>
-
-
-   <!-- bootstrap css cdn-->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-   <!-- aos -->
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-   <!-- animatestyle -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-   <!-- GSAP -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
-
-   <!-- css -->
-   <link rel="stylesheet" href="style.css">
-
-
-</head>
-
-<body>
-
-   <!-- <video autoplay muted loop id="myVideo">
-      <source src="img/bgvideo.mp4" type="video/mp4">
-   </video> -->
-
-
-
-   <!-- homepage -->
-   <div class="background" id="home">
-
-      <!-- navbar -->
-
+    <header class="site-header" id="top">
+      <a class="brand" href="#top">Vivek.</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+        Menu
+      </button>
       <nav>
-         <div class="container">
-            <div class="row navitems">
-               <div class="col navitem"><a class="nav_link" href="#home">HOME</a></div>
-               <div class="col navitem"><a class="nav_link" href="#project">PROJECT</a></div>
-               <div class="col navitem"><a class="nav_link" href="#contact">CONTACT</a></div>
-               <div class="col navitem">
-                  <a class="nav_link"
-                     href="https://onedrive.live.com/embed?resid=6643E2E3A5537E83%213534&authkey=!ABJeO_As1sP7NJQ&em=2"
-                     download target="_blank">
-                     RESUME
-                  </a>
-               </div>
-            </div>
-
-         </div>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="resume-pill" href="https://onedrive.live.com/embed?resid=6643E2E3A5537E83%213534&authkey=!ABJeO_As1sP7NJQ&em=2" target="_blank" rel="noreferrer">Resume ↗</a></li>
+        </ul>
       </nav>
+    </header>
 
-
-      <!-- introsection -->
-      <section class="intro">
-         <div class="container intro_container">
-            <div class="row intro_boxes">
-               <div class="col-lg-6 col-md-12 intro_box1" data-aos="fade-in-left">
-                  <div class="name_bio">
-                     <p class="name">
-                        Hi, I'm Vivek
-                     </p>
-                     <p class="bio">
-                        A passionate Full Stack Software Developer 🚀 having an experience of building Web applications
-                        with
-                        JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.
-                     </p>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-md-12 intro_box2 animate__animated animate__fadeInRight">
-                  <div class="box2_svg">
-                     <!-- <div class="box2_svg_img1"> -->
-                     <lottie-player class="box2_svg_img1"
-                        src="https://assets8.lottiefiles.com/packages/lf20_vnikrcia.json" background="transparent"
-                        speed="1" loop autoplay></lottie-player>
-                     <!-- </div> -->
-                  </div>
-               </div>
-            </div>
-         </div>
+    <main>
+      <section class="hero section">
+        <p class="eyebrow">Inspired by modern Dribbble + Figma portfolio aesthetics</p>
+        <h1>Design-minded full stack developer crafting polished digital products.</h1>
+        <p class="hero-copy" id="about">
+          I build end-to-end web apps with React, Node.js, and expressive UI systems. I care about clean architecture,
+          delightful interactions, and measurable product impact.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Work</a>
+          <a class="btn btn-ghost" href="mailto:vivek.rbj.up@gmail.com">Book a call</a>
+        </div>
+        <ul class="metrics" aria-label="Quick highlights">
+          <li><strong>12+</strong><span>Projects shipped</span></li>
+          <li><strong>MERN</strong><span>Core stack</span></li>
+          <li><strong>Open</strong><span>To freelance roles</span></li>
+        </ul>
       </section>
 
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <h2>Selected Projects</h2>
+          <p>A bento-style showcase inspired by current portfolio explorations.</p>
+        </div>
 
-   </div>
-
-
-   <div class="fron_project_to_end">
-      <!-- project -->
-
-      <section class="project" id="project">
-         <div class="project_heading">Projects</div>
-         <div class="project_box">
-            <div class="container">
-               <!-- <div class="row project_row">
-                  <div class="col-lg-7 project_img project_img1" data-aos="slide-left" data-aos-duration="1500"
-                     style="transition: 1.5s;">
-                  </div>
-                  <div class="col-lg-5 project_info">
-                     <div class="project_title">
-                        Arcade
-                     </div>
-                     <div class="project_detail">
-                        It is a fully responsive gaming website where user can play a lot of different games.
-                        I initially created many games like Ping Pong, Snake games, Tic Tac Toe, Simon game and then
-                        linked them all together to built this arcade.
-                     </div>
-                     <div class="project_demo">
-                        <a href="https://vivek7777777.github.io/arcade/"><button class="project_link">View</button></a>
-                     </div>
-                  </div>
-               </div> -->
-               <div class="row project_row">
-                  <div class="col-lg-7 project_img project_img1" data-aos="slide-left" data-aos-duration="1500"
-                     style="transition: 1.5s;">
-                  </div>
-                  <div class="col-lg-5 project_info">
-                     <div class="project_title">
-                        LinkUp
-                     </div>
-                     <div class="project_detail">
-                        Developed a social media app using MERN and added authentication using JWT.
-                        It has a responsive and dynamic user interface and user can perform actions like add/remove frined, like, post and visit profiles.
-                     </div>
-                     <div class="project_demo">
-                        <a href="https://linkupp.vercel.app"><button class="project_link">View</button></a>
-                     </div>
-                  </div>
-               </div>
-
-
-               <div class="row project_row">
-                  <div class="col-lg-5 project_info project_info_even ">
-                     <div class="project_title">
-                        University website
-                     </div>
-                     <div class="project_detail">
-                        Created a fully functional and responsive University website using HTML, CSS, Bootstrap,
-                        JavaScript and jQuery.
-                        It is a simple and creative design which helps user to navigate through the website easily and
-                        explore the university.
-                     </div>
-                     <div class="project_demo">
-                        <a href="https://vivek7777777.github.io/University_website/"><button
-                              class="project_link">View</button></a>
-                     </div>
-                  </div>
-                  <div class="col-lg-7 project_img project_img2" data-aos="slide-right" data-aos-duration="1500"
-                     style="transition: 1.5s;"></div>
-               </div>
-
-
-               <div class="row project_row">
-                  <div class="col-lg-7 project_img project_img3" data-aos="slide-left" data-aos-duration="1500"
-                     style="transition: 1.5s;"></div>
-                  <div class="col-lg-5 project_info">
-                     <div class="project_title">
-                        Ecommerce website
-                     </div>
-                     <div class="project_detail">
-
-                        Created a fully functional and responsive E-commerce website using HTML, CSS, Bootstrap,
-                        JavaScript and jQuery.
-                        It is a simple design which helps user to navigate through the products easily.
-                        It also contain product description and buy now option.
-
-                     </div>
-                     <div class="project_demo">
-                        <a href="https://vivek7777777.github.io/clothing-website/"><button
-                              class="project_link">View</button></a>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="show_all_project">
-                  <a href="https://github.com/Vivek7777777?tab=repositories" target="_blank">
-                     <lottie-player class="all_project_icon"
-                        src="https://assets1.lottiefiles.com/packages/lf20_80nu1g6c.json" speed="1" loop
-                        autoplay></lottie-player>
-                  </a>
-
-               </div>
+        <div class="project-grid">
+          <article class="project-card large">
+            <img src="img/pro1.png" alt="LinkUp social media app preview" loading="lazy" />
+            <div class="project-content">
+              <span class="tag">MERN • Realtime UI</span>
+              <h3>LinkUp</h3>
+              <p>
+                Social platform with authentication, profile flows, and interaction features like posts, likes,
+                and friend management.
+              </p>
+              <a href="https://linkupp.vercel.app" target="_blank" rel="noreferrer">Live preview ↗</a>
             </div>
+          </article>
 
+          <article class="project-card">
+            <img src="img/pro2.png" alt="University website preview" loading="lazy" />
+            <div class="project-content">
+              <span class="tag">Frontend</span>
+              <h3>University Website</h3>
+              <p>Responsive information architecture and clear UX for student-facing pages.</p>
+              <a href="https://vivek7777777.github.io/University_website/" target="_blank" rel="noreferrer">Live preview ↗</a>
+            </div>
+          </article>
 
-
-
-         </div>
+          <article class="project-card">
+            <img src="img/pro3.png" alt="Ecommerce website preview" loading="lazy" />
+            <div class="project-content">
+              <span class="tag">E-commerce</span>
+              <h3>Ecommerce Website</h3>
+              <p>Product-centric storefront experience with responsive layout and conversion-ready structure.</p>
+              <a href="https://vivek7777777.github.io/clothing-website/" target="_blank" rel="noreferrer">Live preview ↗</a>
+            </div>
+          </article>
+        </div>
       </section>
 
-
-
-
-      <!-- why you -->
-      <!-- <section class="project why" id="why">
-   <div class="project_heading why_heading">Why you?</div>
-   <div class="why_box">
-         <div class="items item1" data-aos="flip-up" >
-            Quality
-            <div class="items item2 " data-aos="fade-up-left" data-aos-duration="1500">Cost</div>
-            <div class="items item3 " data-aos="fade-up-right" data-aos-duration="1500">Speed</div>
-         </div>
-      </div>
-   </section> -->
-
-
-
-      <!-- skills -->
-      <section class="skill_section">
-         <div class="skill_heading ">
-            <div class="skill_project_heading">
-               Skills
-            </div>
-
-         </div>
-         <img src="img/circle-spin.svg" alt="">
-         <img src="img/circle-spin.svg" alt="">
-         <div class="all_skills">
-            <div class="my_skills container">
-
-               <div class="row skill_row">
-                  <div class="col-md-5 col-sm-5 col-5 skillset">
-                     <div class="skill_set1">
-
-                        <div class="skill_in_set1 react">
-                           REACT
-                        </div>
-                        <div class="skill_in_set1 node">
-                           NODEJS
-                        </div>
-                        <div class="skill_in_set1 jquery">
-                           JQUERY
-                        </div>
-                        <div class="skill_in_set1 mysql">
-                           MYSQL
-                        </div>
-                        <div class="skill_in_set1 api">
-                           API
-                        </div>
-
-                     </div>
-
-                  </div>
-
-                  <div class="col-md-2 col-sm-2 col skill_line">
-                     <div class="box">
-
-                     </div>
-                  </div>
-
-                  <div class="col-md-5 col-sm-5 col-5 skillset">
-                     <div class="skill_set2">
-
-                        <div class="skill_in_set2 javascript">
-                           JAVASRRIPT
-                        </div>
-                        <div class="skill_in_set2 express">
-                           EXPRESSJS
-                        </div>
-                        <div class="skill_in_set2 mongo">
-                           MONGODB
-                        </div>
-                        <div class="skill_in_set2 bootstarp">
-                           BOOTSTRAP
-                        </div>
-                        <div class="skill_in_set2 css">
-                           CSS
-                        </div>
-
-                     </div>
-
-                  </div>
-               </div>
-
-            </div>
-         </div>
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <h2>Core Skills</h2>
+          <p>Technologies I use to ship reliable and scalable experiences.</p>
+        </div>
+        <div class="chips">
+          <span>React</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>MySQL</span><span>Bootstrap</span><span>API Integration</span><span>jQuery</span><span>HTML/CSS</span>
+        </div>
       </section>
 
-
-
-
-
-
-      <!-- contact -->
-      <section class="main_contact" id="contact">
-         <div class="container">
-
-            <div class="row contact_heading ">
-               <div class="contact_heading_content col-md-6">
-                  <p class="cline2">
-                     Let's work together
-                  </p>
-                  <div class="contact_heading_content_img">
-                     <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_w6y7r1ap.json"
-                        background="transparent" speed="1" loop autoplay></lottie-player>
-                  </div>
-               </div>
-               <div class="contact_heading_svg col-md-6">
-                  <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_w7x9i6ag.json"
-                     background="transparent" speed="1" loop autoplay></lottie-player>
-               </div>
-            </div>
-         </div>
-
-
-         <div class="circular_box">
-            <div class="contact">
-               <a class="contact_icons cicon1" href="https://github.com/Vivek7777777" target="_blank">
-                  <lottie-player class="github" src="https://assets1.lottiefiles.com/packages/lf20_6HFXXE.json"
-                     background="transparent" speed="2" loop autoplay></lottie-player>
-               </a>
-               <a class="contact_icons cicon2" href="https://www.linkedin.com/in/vivek-vks/" target="_blank">
-                  <lottie-player class="linkedin" src="https://assets9.lottiefiles.com/packages/lf20_0Cm1Y2.json"
-                     background="transparent" speed="1" loop autoplay></lottie-player>
-               </a>
-               <a class="contact_icons cicon3" href="mailto: vivek.rbj.up@gmail.com" target="_blank">
-                  <lottie-player class="gmail" src="https://assets10.lottiefiles.com/packages/lf20_a0reautd.json"
-                     background="transparent" speed="1" loop autoplay></lottie-player>
-               </a>
-               <a class="contact_icons cicon4" href="https://twitter.com/vivek__vks" target="_blank">
-                  <lottie-player class="twitter" src="https://assets1.lottiefiles.com/private_files/lf30_oxdthhr1.json"
-                     background="transparent" speed="1" loop autoplay></lottie-player>
-               </a>
-            </div>
-         </div>
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Let’s build something meaningful</p>
+          <h2>Available for full-time and freelance opportunities.</h2>
+          <p>
+            If you have an idea, product revamp, or collaboration in mind, send a message and I’ll get back quickly.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:vivek.rbj.up@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/vivek-vks/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/Vivek7777777" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://twitter.com/vivek__vks" target="_blank" rel="noreferrer">Twitter/X</a>
+        </div>
       </section>
+    </main>
 
+    <footer>
+      <p>© <span id="year"></span> Vivek. Built with intent and curiosity.</p>
+    </footer>
 
-   </div>
-
-
-
-   <!-- bootstrap js cdn -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
-
-   <!-- aos -->
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-   <!-- jquerry cdn-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-   <!-- icon -->
-   <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
-   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-
-
-   <!-- js -->
-   <script src="script.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
